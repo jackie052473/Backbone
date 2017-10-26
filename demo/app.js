@@ -1,0 +1,26 @@
+require.config({
+	shim:{
+		'lib/backbone':{
+			exports:'Backbone',
+			deps:['lib/zepto','lib/zepto.touch','lib/underscore']
+		},
+		'lib/zepto':{
+			exports:'$'
+		},
+		'lib/zepto.touch':{
+			exports:'$',
+			deps:['lib/zepto']
+		},
+		'lib/underscore':{
+			exports:'_'
+		}
+	},
+	map:{
+		'*':{
+			css:'lib/css'
+		}
+	}
+})
+require(['lib/backbone','js/router/router','css!reset.css'],function(Backbone,router){
+	router();
+})

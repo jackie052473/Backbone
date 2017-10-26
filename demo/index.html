@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no, width=device-width">
+	<title>Document</title>
+</head>
+<body>
+	<div id="app">
+		<section id="list" class='list'>
+			<header class="header clear">
+				<span class='lt'>&lt;</span>
+				<h1><img src="banner/logo2017.png" alt=""></h1>
+				<span class=login>登陆</span>
+			</header>
+			<div class='search'>
+				<input type="text" placeholder='请输入想要搜索的图片'>
+				<span>搜一搜</span>
+			</div>
+			<nav>
+				<ul>
+					<li data-type='0'>摄影</li>
+					<li data-type='1'>明星</li>
+					<li data-type='2'>壁纸</li>
+					<li data-type='3'>宠物</li>
+					<li data-type='4'>动漫</li>
+					<li data-type='5'>风景</li>
+					<li data-type='6'>头像</li>
+					<li data-type='7'>人物</li>
+				</ul>
+			</nav>
+			<div class="image-container">
+				<div class="left-container"></div>
+				<div class="right-container"></div>
+			</div>
+			<div class="go-top">^</div>
+		</section>
+		<section id="layer" class='layer'></section>
+<script type="text/template" id="tpl_layer">
+		<div class="image-container" style="<%=style%>"><img src="<%=src%>" style='width:<%=width%>' alt=""></div>
+		<div class="header">
+			<div class="go-back"><span class="arrow"><span class="arrow black"></span></span></div>
+			<h1><%=title%></h1>
+			<span class='yyy'>&lt;</span>
+			<span class='xxx'>&gt;</span>
+		</div>
+	</script>
+</script>
+	</div>
+</body>
+<script src="lib/require.js" data-main='app.js'></script>
+<script>
+	console.log('返回顶部动画效果')
+</script>
+</html>

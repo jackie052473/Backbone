@@ -1,0 +1,132 @@
+body{
+	background:#F6F6F6;
+}
+.header{
+	width:100%;
+	height:60px;
+	background:#0A243B;
+	color:#fff;
+	line-height: 60px
+}
+.header .lt{
+	display: inline-block;
+	float:left;
+	font-size:36px;
+	padding:0 20px;
+}
+.header h1{
+	float:left;
+	line-height: 60px;
+	padding-left:33px;
+}
+.header h1 img{
+	width:190px;
+	vertical-align:middle;
+}
+.header .login{
+	float:right;
+	font-size:16px;
+	padding-right:20px;
+}
+.search{
+	width: 100%;
+	display: -webkit-box;
+	padding:10px 20px;
+	
+	box-sizing:border-box;
+}
+div.search input{
+	-webkit-box-flex:1;
+	display: block;
+	width:245px;
+	height:20px;
+	padding:10px;
+	font-size:12px;
+	border:1px solid #0A243B;
+}
+.search span{
+	display: block;
+	width:60px;
+	text-align:center;
+	padding:10px;
+	background:#0A243B;
+	font-size:14px;
+	color:#fff;
+}
+nav ul{
+	width: 100%;
+	padding-left:10px;
+	overflow: hidden;
+}
+nav ul li{
+	float:left;
+	width:82px;
+	height:30px;
+	text-align:center;
+	border-radius:14px;
+	font-size:16px;
+	line-height: 30px;
+	margin:0px 10px 10px 0;
+	color:#0A243B;
+
+}
+nav ul li:nth-child(1){
+	background:#F58F22;
+}
+nav ul li:nth-child(2){
+	background:#4DB5E1;
+}
+nav ul li:nth-child(3){
+	background:#75B94B;
+}
+nav ul li:nth-child(4){
+	background:#8E8F94;
+}
+nav ul li:nth-child(5){
+	background:#E71C23;
+}
+nav ul li:nth-child(6){
+	background:#602A88;
+}
+nav ul li:nth-child(7){
+	background:#80984E;
+}
+nav ul li:nth-child(8){
+	background:bisque;
+}
+
+.list .image-container {
+	display: -webkit-box;
+}
+
+.list .left-container,
+.list .right-container {
+	-webkit-box-flex: 1;
+}
+.list .left-container {
+	padding: 6px 3px 6px 6px;
+}
+.list .right-container {
+	padding: 6px 6px 6px 3px;
+}
+.list .image-container img {
+	width: 100%;
+	display: block;
+	margin-bottom: 6px;
+}
+/*返回顶部*/
+.go-top {
+	font-size: 40px;
+	color: #fff;
+	background: rgba(0, 0, 0, .5);
+	position: fixed;
+	bottom: 110px;
+	right: 30px;
+	width: 24px;
+	height: 24px;
+	padding: 5px;
+	padding-right:10px;
+	text-align: center;
+	line-height: 38px;
+	display: none;
+}
